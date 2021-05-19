@@ -1,1 +1,2 @@
-/* No CSS *//*# sourceMappingURL=style.min.css.map */
+@font-face{font-family:'Montserrat';src:url("/assets/fonts/monserat/Montserrat-Regular.ttf")}@font-face{font-family:'Montserrat Bold';src:url("/assets/fonts/monserat/Montserrat-Bold.ttf")}p{margin-bottom:0}.navbar-nav .nav-item .nav-link{font-family:"Montserrat Bold";color:#6c6c6c}.navbar-nav .nav-item .nav-link.active p{color:#242424;display:inline-block}.navbar-nav .nav-item .nav-link.active p::after{display:block;border-bottom:3px solid #242424;width:22px;content:"";margin:auto}.about-us-header{font-family:"Montserrat Bold"}.about-us-text{font-family:"Montserrat"}
+/*# sourceMappingURL=style.min.css.map */

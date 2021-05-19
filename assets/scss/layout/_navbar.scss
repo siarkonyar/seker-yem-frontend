@@ -1,0 +1,19 @@
+$navbar-font:'Montserrat Bold';
+
+.navbar-nav .nav-item .nav-link{
+    font-family: $navbar-font;
+    color: #6c6c6c;
+}
+
+.navbar-nav .nav-item .nav-link.active p{
+    color: #242424;
+    display: inline-block;
+}
+
+.navbar-nav .nav-item .nav-link.active p::after{
+    display: block;
+    border-bottom: 3px solid #242424;
+    width: 22px;
+    content: "";
+    margin: auto;
+}
