@@ -1,5 +1,25 @@
 $about-us-header-font:'Montserrat Bold';
-$about-us-text-font:'Montserrat';
+$about-us-text-font:'Montserrat Medium';
+
+@media (max-width:768px) {
+
+    .about-us-img{
+        padding: 0 !important;
+    }
+    
+    .line{
+        border-bottom: 3px solid rgba($color: #838383, $alpha: .6) !important;
+        
+    }
+
+}
+
+#about-us{
+    background-image: url(/assets/img/back-ground/grass-bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
 
 .about-us-header{
     font-family: $about-us-header-font;
@@ -7,4 +27,8 @@ $about-us-text-font:'Montserrat';
 
 .about-us-text{
     font-family: $about-us-text-font;
+}
+
+.line{
+    border-bottom: 0;
 }
