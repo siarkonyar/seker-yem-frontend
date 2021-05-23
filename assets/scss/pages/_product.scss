@@ -1,0 +1,19 @@
+$product-card-font:'Montserrat';
+
+.product-card{
+    width: 250px;
+    font-family: $product-info-text-font;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid $product-info-color;
+    margin-right: 5px;
+}
+.product-card:hover{
+    cursor: default;
+}
+
+.product-card-info-text{
+    font-family: $product-card-font;
+    font-size: 15px;
+    color: #bababa;
+}

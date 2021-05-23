@@ -1,0 +1,37 @@
+$product-info-header-font: 'Montserrat Bold';
+$product-info-text-font: 'Montserrat';
+$product-info-color:#90b929;
+@mixin product-info-btn {
+    background-color: $product-info-color;
+    color: white;
+}
+
+#product-info{
+    margin-bottom: 50px;
+}
+
+.product-info-header{
+    font-family: $product-info-header-font;
+}
+
+.product-info-text{
+    font-family: $product-info-text-font;
+    font-size: 15px;
+}
+
+.product-info-btn{
+    font-family: $product-info-text-font;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid $product-info-color;
+    color: $product-info-color;
+}
+
+.product-info-btn:hover{
+    @include product-info-btn;
+}
+
+.product-info-btn:focus{
+    @include product-info-btn;
+    box-shadow: none;
+}
