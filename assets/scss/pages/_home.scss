@@ -1,0 +1,102 @@
+$home-font: "Montserrat";
+$home-btn-color: #90b928;
+@media (max-width:768px) {
+    .home-nav .navbar .navbar-nav{
+        border-bottom: 2px solid rgba($color: #000000, $alpha: .5);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .home-nav {
+        height: 1081px;
+    }
+
+    #home-carousel {
+        height: 983px !important;
+    }
+}
+
+@media (min-width:992px) {
+    .home-about-us-sacks{
+        display: inline-block !important;
+        position: absolute;
+        right: -130px;
+        bottom: -70px;
+    }
+
+    .home-about-us{
+        margin-bottom: 150px;
+    }
+}
+
+.home-nav-carousel-text {
+    color: white;
+}
+
+.home-nav {
+    background-image: url(/assets/img/back-ground/home-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: white;
+}
+
+.home-nav .navbar {
+    border-bottom: 0;
+}
+
+.home-nav .nav-link {
+    color: #e8e8e8 !important;
+}
+.home-nav .nav-link.active p {
+    color: #ffffff !important;
+}
+
+.home-nav .navbar-nav .nav-item .nav-link.active p::after {
+    display: block;
+    border-bottom: 3px solid #ffffff;
+    width: 22px;
+    content: "";
+    margin: auto;
+}
+
+#home {
+    font-family: $home-font;
+}
+
+.home-carousel {
+    font-family: $home-font;
+}
+
+#home-carousel .owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home-carousel .owl-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-btn {
+    padding: 9px 50px;
+    color: $home-btn-color;
+    border: 1px solid $home-btn-color;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+        color: white;
+        background-color: $home-btn-color;
+        box-shadow: none;
+    }
+}
+
+.home-about-us-sacks{
+    z-index: -1;
+    display: none;
+}

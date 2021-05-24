@@ -1,5 +1,13 @@
 $navbar-font:'Montserrat Bold';
 
+@media (max-width:768px) {
+    .navbar{
+        border-bottom: 2px solid rgba($color: #000000, $alpha: .5);
+        margin-bottom: 20px;
+        
+    }
+}
+
 @media (min-width:992px) {
 
     .navbar-nav{

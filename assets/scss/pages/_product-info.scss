@@ -39,17 +39,17 @@ $product-info-color:#90b929;
     }
 }
 
-.owl-carousel .item {
+#product-info .owl-carousel .item {
     display: flex;
     justify-content: center;
 }
 
-.owl-nav{
+#product-info .owl-nav{
     display: flex;
     justify-content: center;
 }
 
-.owl-nav .owl-prev{
+#product-info .owl-nav .owl-prev{
     @include product-info-btn;
     width: 32px;
     height: 32px;
@@ -60,7 +60,7 @@ $product-info-color:#90b929;
 
 }
 
-.owl-nav .owl-next{
+#product-info .owl-nav .owl-next{
     @include product-info-btn;
     width: 32px;
     height: 32px;
