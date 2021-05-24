@@ -1,6 +1,10 @@
 $about-us-header-font:'Montserrat Bold';
 $about-us-text-font:'Montserrat Medium';
 
+#about-us{
+    font-family: 'Montserrat';
+}
+
 @media (max-width:768px) {
 
     .about-us-img{

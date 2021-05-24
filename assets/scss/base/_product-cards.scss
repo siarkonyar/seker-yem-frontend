@@ -1,8 +1,9 @@
 $product-card-font:'Montserrat';
+$product-info-color:#90b929;
 
 .product-card{
     width: 250px;
-    font-family: $product-info-text-font;
+    font-family: $product-card-font;
     padding: 10px 20px;
     border-radius: 5px;
     border: 1px solid $product-info-color;

@@ -2,15 +2,20 @@ $product-info-header-font: 'Montserrat Bold';
 $product-info-text-font: 'Montserrat';
 $product-info-color:#90b929;
 @mixin product-info-btn {
-    background-color: $product-info-color;
-    color: white;
+    display: block !important;
+    border: 1px solid $product-info-color !important;
+    color: $product-info-color !important;
+    border-radius: 5px !important;
+    padding: 10px 25px;
 }
 
 #product-info{
     margin-bottom: 50px;
+    font-family: 'Montserrat';
 }
 
 .product-info-header{
+    color: black;
     font-family: $product-info-header-font;
 }
 
@@ -20,18 +25,47 @@ $product-info-color:#90b929;
 }
 
 .product-info-btn{
-    font-family: $product-info-text-font;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 1px solid $product-info-color;
-    color: $product-info-color;
+    
+    @include product-info-btn;
+
+    &:hover{
+        background-color: $product-info-color;
+        color: white !important;
+    }
+    &:focus{
+        background-color: $product-info-color;
+        color: white !important;
+        box-shadow: none;
+    }
 }
 
-.product-info-btn:hover{
-    @include product-info-btn;
+.owl-carousel .item {
+    display: flex;
+    justify-content: center;
 }
 
-.product-info-btn:focus{
+.owl-nav{
+    display: flex;
+    justify-content: center;
+}
+
+.owl-nav .owl-prev{
     @include product-info-btn;
-    box-shadow: none;
+    width: 32px;
+    height: 32px;
+    &:hover{
+        background-color: $product-info-color !important;
+        color: white !important;
+    }
+
+}
+
+.owl-nav .owl-next{
+    @include product-info-btn;
+    width: 32px;
+    height: 32px;
+    &:hover{
+        background-color: $product-info-color !important;
+        color: white !important;
+    }
 }
