@@ -95,12 +95,12 @@ $fermatv-pages-button-color:#90b928;
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: rgba($color: #000, $alpha: .4);
     opacity: 0;
 }
 
 .fermatv-card-img-inner:hover .img-overlay{
-    opacity: .4;
+    opacity: 1;
     transition: opacity .3s ease;
 }
 

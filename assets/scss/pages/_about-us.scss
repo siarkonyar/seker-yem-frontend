@@ -1,39 +1,39 @@
-$about-us-header-font:'Montserrat Bold';
-$about-us-text-font:'Montserrat Medium';
+$about-us-header-font: "Montserrat Bold";
+$about-us-text-font: "Montserrat Medium";
 
-#about-us{
-    font-family: 'Montserrat';
-}
-
-@media (max-width:768px) {
-
-    .about-us-img{
-        padding: 0 !important;
-        display: none;
-    }
-    
-    .line{
-        border-bottom: 3px solid rgba($color: #838383, $alpha: .6) !important;
-        
+@media (min-width: 768px) {
+    .about-us-card {
+        margin-bottom: 100px !important;
     }
 
+    .line {
+        border-bottom: 0 !important;
+    }
+
+    .about-us-img {
+        display: inline-block !important;
+    }
 }
 
-#about-us{
+#about-us {
     background-image: url(/assets/img/back-ground/grass-bg.png);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size: auto;
 }
 
-.about-us-header{
+.about-us-img {
+    display: none;
+}
+
+.about-us-header {
     font-family: $about-us-header-font;
 }
 
-.about-us-text{
+.about-us-text {
     font-family: $about-us-text-font;
 }
 
-.line{
-    border-bottom: 0;
+.line {
+    border-bottom: 3px solid rgba($color: #838383, $alpha: 0.6);
 }
