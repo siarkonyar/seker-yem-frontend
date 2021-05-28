@@ -4,10 +4,9 @@ $about-us-text-font: "Montserrat Medium";
 @media (min-width: 768px) {
     .about-us-card {
         margin-bottom: 100px !important;
-    }
-
-    .line {
-        border-bottom: 0 !important;
+        &::after{
+            border-bottom: 0 !important;
+        }
     }
 
     .about-us-img {
@@ -22,6 +21,20 @@ $about-us-text-font: "Montserrat Medium";
     background-size: auto;
 }
 
+.about-us-card {
+    &::after{
+        border-bottom: 3px solid rgba($color: #838383, $alpha: 0.6);
+        width: 100%;
+        margin-top: 30px;
+        content: "";
+    }
+    &:last-child{
+        &::after{
+            border-bottom: 0;
+        }
+    }
+}
+
 .about-us-img {
     display: none;
 }
@@ -32,8 +45,4 @@ $about-us-text-font: "Montserrat Medium";
 
 .about-us-text {
     font-family: $about-us-text-font;
-}
-
-.line {
-    border-bottom: 3px solid rgba($color: #838383, $alpha: 0.6);
 }

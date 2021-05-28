@@ -1,5 +1,6 @@
 $contact-us-form-font :'Helvetica Neue';
 $contaxt-us-form-color : #90b928;
+
 @mixin contact-us-btn {
     color: #fff;
     background-color: $contaxt-us-form-color;
@@ -24,14 +25,15 @@ $contaxt-us-form-color : #90b928;
     padding: 15px 25px;
 }
 
-.contact-us-input:focus{
-    color: $contaxt-us-form-color !important;
-    border: 1px solid #90b928 !important;
-    box-shadow: none;
-}
-
-.contact-us-input:focus::placeholder{
-    color: $contaxt-us-form-color !important;
+.contact-us-input{
+    &:focus{
+        color: $contaxt-us-form-color !important;
+        border: 1px solid $contaxt-us-form-color !important;
+        box-shadow: none;
+        &::placeholder{
+            color: $contaxt-us-form-color !important;
+        }
+    }
 }
 
 .contact-us-btn{
@@ -39,13 +41,11 @@ $contaxt-us-form-color : #90b928;
     padding: 10px 35px;
     border: 1px solid $contaxt-us-form-color;
     color: $contaxt-us-form-color;
-}
-
-.contact-us-btn:hover{
-    @include contact-us-btn;
-}
-
-.contact-us-btn:focus{
-    @include contact-us-btn;
-    box-shadow: none;
+    &:hover{
+        @include contact-us-btn;
+    }
+    &:focus{
+        @include contact-us-btn;
+        box-shadow: none;
+    }    
 }
